@@ -1,7 +1,7 @@
 import "./globals.css";
 import SessionProviderWrapper from "./providers/SessionProviderWrapper";
-import Navbar from "./components/Navbar/Navbar"; // ✅ Navbar to‘g‘ri import
-import Footer from "./components/Footer/Footer"; // ✅ Footer ham import qilindi
+import Navbar from "./components/Navbar/Navbat"; // 🟢 Navbarni import qildik
+import Footer from "./components/Footer/Footer"; // 🟢 Footer ham qo‘shamiz (xohlasang olib tashlasa ham bo‘ladi)
 
 export const metadata = {
   title: "NextAuth Demo",
@@ -17,11 +17,13 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-gray-950 text-white flex flex-col min-h-screen">
         <SessionProviderWrapper>
-          {/* ✅ Navbar tepada */}
+          {/* 🟩 Navbar tepada joylashgan */}
           <Navbar />
-          {/* ✅ Asosiy kontent */}
+
+          {/* 🟩 Sahifa asosiy kontenti */}
           <main className="flex-grow">{children}</main>
-          {/* ✅ Footer pastda */}
+
+          {/* 🟩 Footer pastda joylashgan */}
           <Footer />
         </SessionProviderWrapper>
       </body>
