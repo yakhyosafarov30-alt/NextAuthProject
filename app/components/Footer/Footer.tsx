@@ -1,7 +1,9 @@
+import React from "react";
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-center text-gray-400 py-4">
-      © {new Date().getFullYear()} OneZero. All rights reserved.
+    <footer className="bg-gray-900 text-center py-6 mt-auto text-gray-400">
+      <p>© {new Date().getFullYear()} OneZero Agency. All rights reserved.</p>
     </footer>
   );
 }
